@@ -1,0 +1,60 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin:-10px;
+}
+
+#product-list {
+  padding: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 30%;
+  margin: 14px;
+  display: inline-block;
+  text-align:center;
+}
+
+/* Pseudo-classes for link behavior and order with errors */
+.product a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin: -10px;
+}
+
+/* Clear floats to avoid parent collapse */
+#product-list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Please use google to find out what this block of code is and why it is being used in this code */
+
+a:active, a:visited
+{
+  color: purple;
+}
+
+h2{
+  margin:2px;
+}
